@@ -35,7 +35,7 @@ func main() {
 
 	conn, err := sql.Open("postgres", dbURL)
 	if err != nil {
-		log.Fatal("Can't connect to database: %v", err),
+		log.Fatal("Can't connect to database: %v", err)
 	}
 
 	queries := database.New(conn)
